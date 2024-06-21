@@ -1,0 +1,75 @@
+// часть 1
+
+// Способ 1: Инициализация при создании
+let array1 = [1, 2, 3, 4, 5, 6, 7];
+
+// Способ 2: Создание пустого массива и добавление элементов
+let array2 = [];
+array2.push(8, 9, 10);
+
+// Способ 3: Создание с помощью конструктора
+let array3 = new Array(11, 12, 13);
+
+// часть 2
+
+console.log(array1[4]); // Вывод 5-го члена (индекс 4)
+
+array1[4] = 100; // Изменение 5-го члена
+
+// часть 3
+
+let arrayLength = array1.length;
+console.log("Длина массива:", arrayLength);
+
+// Добавление события наведения мыши (не работает в консоли, нужна HTML-страница)
+// array1.forEach(element => {
+//   element.addEventListener('mouseover', () => {
+//     alert("Длина массива: " + arrayLength);
+//   });
+// });
+
+// часть 4
+
+for (let i = 0; i < array1.length; i++) {
+  console.log("Элемент", i + 1, ":", array1[i]);
+}
+
+// часть 5
+
+let combinedArray = array1.concat(array2, array3);
+console.log("Объединенный массив:", combinedArray);
+
+// часть 6
+
+let removedElement = combinedArray.pop();
+console.log("Удаленный элемент:", removedElement);
+
+// часть 7
+
+let removedElement = combinedArray.pop();
+console.log("Удаленный элемент:", removedElement);
+
+// часть 8 
+
+combinedArray.unshift(0); 
+console.log("Массив с добавленным элементом:", combinedArray);
+
+// часть 9
+
+let today = new Date();
+console.log("Сегодняшняя дата:", today);
+
+// часть 10
+
+let formattedDate = today.toLocaleDateString('ru-RU', { day: 'numeric', month: 'long', year: 'numeric' });
+console.log("Сегодняшняя дата в формате:", formattedDate);
+
+// часть 11
+
+function randomProduct() {
+  let num1 = Math.floor(Math.random() * 51); // Случайное число от 0 до 50
+  let num2 = Math.floor(Math.random() * 51);
+  return num1 * num2;
+}
+
+console.log("Произведение двух случайных чисел:", randomProduct());
