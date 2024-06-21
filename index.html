@@ -14,7 +14,7 @@
             margin: 0 10px;
             padding: 10px 20px;
             background-color: #4CAF50;
-            color: white;
+            color: black;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -175,7 +175,6 @@ footer {
         <ul>
             <li><strong>Разработка операционных систем:</strong> Для этого используются другие языки, такие как C++ или Rust</li>
             <li><strong>Разработка драйверов:</strong> JavaScript не используется для написания драйверов для устройств</li>
-            <li><strong>Высокопроизводительные вычисления:</strong> Для задач, требующих большой мощности, используются языки, такие как C или Fortran</li>
         </ul>
     </section>
 </main>
@@ -183,7 +182,7 @@ footer {
 <script src="script.js"></script>
 
 <div id="menu">
-        <button onclick="showTask1()">Знак зодиака</button>
+        <button onclick="showTask1()">Ваш знак зодиака</button>
         <button onclick="showTask2()">Числа от 1 до 5</button>
         <button onclick="showTask3()">Дата</button>
         <button onclick="showTask4()">Приветствие</button>
@@ -248,7 +247,7 @@ case "рыбы":
                     alert("Привет, Рыбы!");
                     break;
                 default:
-                    alert("Неизвестный знак зодиака!");
+                    alert("Мы таких знаков не знаем!");
             }
         }
 
@@ -268,7 +267,7 @@ case "рыбы":
             if (number >= 1 && number <= 5) {
                 alert("Число в диапазоне от 1 до 5!");
             } else {
-                alert("Число не находится в диапазоне от 1 до 5!");
+                alert("Число не находится в диапазоне от 1 до 5! Увы, вы проиграли");
             }
         }
 
