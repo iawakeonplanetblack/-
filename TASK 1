@@ -1,0 +1,99 @@
+// часть 0
+
+let myVariable = "Hello World!";
+
+// Определение типа
+console.log(typeof myVariable); // Выведет: "string"
+
+if (typeof myVariable === "string") {
+  alert("Переменная содержит текст: " + myVariable);
+} else {
+  alert("Переменная не содержит текст");
+}
+
+// часть 1
+
+let zodiac = prompt("Введите ваш знак зодиака:");
+
+switch (zodiac.toLowerCase()) {
+  case "овен":
+    alert("Привет, Овен! Желаем удачи!");
+    break;
+  case "телец":
+    alert("Привет, Телец! Пусть все будет гладко!");
+    break;
+  case "близнецы":
+    alert("Привет, Близнецы! Будьте гибкими!");
+    break;
+  default:
+    alert("Привет! Мы не знаем этот знак зодиака.");
+}
+
+// часть 2
+
+// Цикл for
+for (let i = 1; i <= 40; i++) {
+  console.log(i);
+}
+
+// Цикл while
+let j = 1;
+while (j <= 40) {
+  console.log(j);
+  j++;
+}
+
+// Цикл do...while
+let k = 1;
+do {
+  console.log(k);
+  k++;
+
+// часть 3
+
+setInterval(function() {
+  alert("Это вирусная страница! Заражена!");
+}, 1000); // Повторяет сообщение каждые 1000 мс (1 секунда)
+
+// часть 4
+
+let userNumber = prompt("Введите число больше 5:");
+
+// Проверка на отмену
+if (userNumber === null) {
+  alert("Вы отменили ввод.");
+} else {
+  // Преобразование в число
+  userNumber = parseInt(userNumber);
+
+  if (userNumber > 5) {
+    alert("Поздравляем! Вы ввели число больше 5.");
+  } else {
+    alert("Неверно! Попробуйте снова.");
+    // Повторный запрос (рекурсивно)
+    requestNumber(); 
+  }
+}
+
+function requestNumber() {
+  // Запрос числа снова
+  let userNumber = prompt("Введите число больше 5:");
+  // ... (оставшаяся логика проверки)
+}
+
+// часть 5
+
+for (let i = 8; i <= 20; i += 2) {
+  console.log(i);
+}
+
+// часть 6
+
+for (let i = 1; i <= 7; i++) {
+  if (i === 5) {
+    continue; // Пропускаем 5
+  }
+  if (i % 2 !== 0) {
+    console.log(i);
+  }
+}
